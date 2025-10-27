@@ -4,12 +4,12 @@ WORKDIR /app
 
 COPY package*.json .
 
-# Install all dependencies but don't run scripts
-RUN npm install --ignore-scripts
+RUN npm install
 
-# Copy all source files
 COPY . .
 
-EXPOSE 5173
+RUN npm run build
 
-CMD ["npm", "run", "dev", "--", "--host", "0.0.0.0"]
+EXPOSE 3000
+
+CMD ["node", "server.js"]

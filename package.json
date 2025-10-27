@@ -5,13 +5,15 @@
   "type": "module",
   "scripts": {
     "dev": "vite",
-    "build": "rm -rf dist && vite build && cat ./package.json | grep -v '\"private\":' > dist/package.json",
+    "build": "vite build",
     "prepare": "npm run build",
     "lint": "eslint . --ext js,jsx --report-unused-disable-directives --max-warnings 0",
-    "preview": "vite preview"
-    
-    },
+    "preview": "vite preview",
+    "start": "node server.js",
+    "build-and-start": "npm run build && npm start"
+  },
   "dependencies": {
+    "express": "^4.18.2",
     "eslint-config-prettier": "^9.0.0",
     "eslint-config-standard": "^17.1.0",
     "eslint-plugin-tailwindcss": "^3.13.0",
