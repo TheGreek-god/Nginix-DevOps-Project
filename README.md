@@ -5,16 +5,6 @@ This project demonstrates a production-ready deployment of a Nike landing page a
 
 ---
 
-## **Architecture**
-
-```plaintext
-User Request → Nginx (Load Balancer) → [App1, App2, App3] Docker Containers
-    ↓
-HTTPS (443) with SSL Termination
-    ↓
-HTTP to HTTPS Automatic Redirect
-```
-
 ## **Quick Start**
 
 ### **Prerequisites**
