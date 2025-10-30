@@ -1,4 +1,4 @@
-# **Nike Landing Page with Nginx Load Balancer**
+# **Nginx as a Complete Web Infrastructure Solution**
 
 ## **Project Overview**
 This project demonstrates a production-ready deployment of a Nike landing page application using Docker containers, Nginx load balancing, and SSL termination. The setup includes three backend servers behind an Nginx reverse proxy with automatic HTTP to HTTPS redirection.
